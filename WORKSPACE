@@ -18,3 +18,12 @@ load(
 )
 
 rules_haskell_dependencies()
+
+load(
+    "@rules_haskell//haskell:ghc_bindist.bzl",
+    "haskell_register_ghc_bindists",
+)
+
+haskell_register_ghc_bindists(
+    version = "8.6.5",
+)
