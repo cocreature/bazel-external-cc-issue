@@ -18,10 +18,3 @@ load(
 )
 
 rules_haskell_dependencies()
-
-load(
-    "@rules_haskell//haskell:toolchain.bzl",
-    "rules_haskell_toolchains",
-)
-
-rules_haskell_toolchains()
