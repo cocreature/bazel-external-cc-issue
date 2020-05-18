@@ -6,7 +6,7 @@ index cb6b9c07..7ec12e40 100644
          abi_libc_version = "local",
          tool_paths = tool_paths,
          artifact_name_patterns = artifact_name_patterns,
-+        builtin_sysroot = "external/rules_haskell_ghc_windowsamd64/mingw/x86_64-w65-mingw32",
++        builtin_sysroot = "external/rules_haskell_ghc_windows_amd64/mingw/x86_64-w65-mingw32",
          features = [default_link_flags_feature],
      )
  
