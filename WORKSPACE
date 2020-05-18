@@ -10,6 +10,8 @@ http_archive(
     strip_prefix = "rules_haskell-a9930c7856d251718613cca7a75f83aa911bf725",
     urls = ["https://github.com/tweag/rules_haskell/archive/a9930c7856d251718613cca7a75f83aa911bf725.tar.gz"],
     sha256 = "f23deee19fabd8317cd66ac531169e2f332bb9420676de4d1429384ebfd5d74a",
+    patches = ["cc.patch"],
+    patch_args = ["-p1"],
 )
 
 load(
