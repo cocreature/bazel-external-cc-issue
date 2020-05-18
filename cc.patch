@@ -1,12 +1,13 @@
 diff --git a/haskell/cc_toolchain_config.bzl b/haskell/cc_toolchain_config.bzl
-index cb6b9c07..7ec12e40 100644
+index cb6b9c07..109dfc41 100644
 --- a/haskell/cc_toolchain_config.bzl
 +++ b/haskell/cc_toolchain_config.bzl
-@@ -97,6 +97,7 @@ def _impl(ctx):
+@@ -97,6 +97,8 @@ def _impl(ctx):
          abi_libc_version = "local",
          tool_paths = tool_paths,
          artifact_name_patterns = artifact_name_patterns,
 +        builtin_sysroot = "external/rules_haskell_ghc_windows_amd64/mingw/x86_64-w64-mingw32",
++        cxx_builtin_include_directories = ["external/rules_haskell_ghc_windows_amd64/mingw/x86_64-w64-mingw32/include"],
          features = [default_link_flags_feature],
      )
  
